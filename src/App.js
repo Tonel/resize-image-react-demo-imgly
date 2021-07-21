@@ -35,7 +35,7 @@ function App() {
                 <div>
                     <h2>Resized Image</h2>
                     <img
-                        alt="Resize Image"
+                        alt="Resize Img"
                         src={resizedImage}
                     />
                 </div>

@@ -41,15 +41,16 @@ function ImageResize(props) {
     ]);
 
     return (
-        <img
-            src={imageToResizeUri}
-            onLoad= {(e) => {
-                const img = e.target;
-                setImageToResizeWidth(img.width);
-                setImageToResizeHeight(img.height);
-            }}
-            crossorigin="anonymous" // to avoid CORS-related problems
-        />
+            imageToResizeUri ? <img
+                src={imageToResizeUri}
+                alt="Img to Resize"
+                onLoad={(e) => {
+                    const img = e.target;
+                    setImageToResizeWidth(img.width);
+                    setImageToResizeHeight(img.height);
+                }}
+                crossorigin="anonymous" // to avoid CORS-related problems
+            /> : <></>
     );
 }
 
