@@ -27,7 +27,7 @@ function App() {
             <div>
                 <ImageResize
                     imageToResize={imageToResize}
-                    onImageResized={(croppedImage) => setResizedImage(croppedImage)}
+                    onImageResized={(resizedImage) => setResizedImage(resizedImage)}
                 />
             </div>
             {
